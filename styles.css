@@ -11,7 +11,7 @@
 }
 
 body{
-    background-color: rgb(208, 192, 238);
+    background-color: rgb(215, 238, 206);
     font-size: 2rem;
     text-align: center;
     font-style: italic
@@ -48,15 +48,23 @@ h2{
 
 .result
 {
-    font-size: 1rem;
-    padding: 1.8rem 1.0rem;
-    color: rgb(51, 255, 0);
+    font-size: 1.5rem;
+    margin-top: 5.5rem;
+    padding: 1.5rem 1.0rem;
+    color: rgb(40, 177, 6);
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: normal;
 }
 .result2
 {
-    font-size: 1rem;
-    padding: 1.8rem 1.0rem;
+    font-size: 1.5rem;
+    margin-top: 0rem;
+    padding: 1.5rem 1.0rem;
     color: red;
+    background-color: rgb(252, 244, 244);
+    font-style: normal;
+    font-weight: bold;
 }
 
 .btn2

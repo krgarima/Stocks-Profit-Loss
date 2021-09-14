@@ -10,13 +10,13 @@ function ProfitLossCalculator(initial, current, quantity) {
     if (initial < current) {
         const profit = current - initial;
         const percentageProfit = (profit / initial) * 100;
-        outputMessage1.innerText = "Profit is "+profit+ "and Profit percentage is"+percentageProfit;
+        outputMessage1.innerText = "Your Profit is "+profit+ " and Profit percentage is "+percentageProfit;
         outputMessage2.innerText="";
         
     } else if (initial > current) {
         const loss = initial - current;
         const percentageLoss = (loss / initial) * 100;
-        outputMessage2.innerText = "Loss is "+loss+ "and Loss percentage is"+percentageLoss;
+        outputMessage2.innerText = "Your Loss is "+loss+ " and Loss percentage is "+percentageLoss;
         outputMessage1.innerText="";
     } else
     outputMessage1.innerText = "No profit or Loss. Better luck next time";
