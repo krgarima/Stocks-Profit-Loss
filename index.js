@@ -27,13 +27,18 @@ function valueSubmit() {
     var inp = Number(initialPrice.value);
     var cur = Number(currentPrice.value);
     var numStocks = Number(stocksQuantity.value);
-    if ((inp > 0) && (cur > 0) && (numStocks > 0)) {
-        ProfitLossCalculator(inp, cur, numStocks)
-    }
-    else
-    {outputMessage1.innerText = null;
-    outputMessage2.innerText = "Invalid input!";}
-}
 
+    if ((inp) && (cur) && (numStocks)) {
+        if ((inp > 0) && (cur > 0) && (numStocks > 0)) {
+            ProfitLossCalculator(inp, cur, numStocks)
+        } else {
+            outputMessage1.innerText = null;
+            outputMessage2.innerText = "Entered value is negative!";
+        }
+    } else {
+        outputMessage1.innerText = null;
+        outputMessage2.innerText = "Enter value in all the fields!";
+    }
+}
 
 calculateBtn.addEventListener("click", valueSubmit);
