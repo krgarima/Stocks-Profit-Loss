@@ -8,14 +8,14 @@ const outputMessage2 = document.querySelector('#output-message2');
 function ProfitLossCalculator(initial, current, quantity) {
 
     if (initial < current) {
-        const profit = current - initial;
-        const percentageProfit = (profit / initial) * 100;
+        const profit = (current - initial)*stocksQuantity.value;
+        const percentageProfit = (profit / (initial*stocksQuantity.value)) * 100;
         outputMessage1.innerText = "Your Profit is " + profit + " and Profit percentage is " + percentageProfit;
         outputMessage2.innerText = "";
 
     } else if (initial > current) {
-        const loss = initial - current;
-        const percentageLoss = (loss / initial) * 100;
+        const loss = (initial - current)*stocksQuantity.value;
+        const percentageLoss = (loss / (initial*stocksQuantity.value)) * 100;
         outputMessage2.innerText = "Your Loss is " + loss + " and Loss percentage is " + percentageLoss;
         outputMessage1.innerText = "";
     } else
