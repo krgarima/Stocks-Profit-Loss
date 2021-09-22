@@ -49,7 +49,8 @@ h2{
 .result
 {
     font-size: 1.5rem;
-    margin-top: 5.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
     padding: 1.5rem 1.0rem;
     color: rgb(40, 177, 6);
     background-color: rgb(255, 255, 255);
@@ -60,6 +61,7 @@ h2{
 {
     font-size: 1.5rem;
     margin-top: 0rem;
+    margin-bottom: 5rem;
     padding: 1.5rem 1.0rem;
     color: red;
     background-color: rgb(252, 244, 244);
@@ -109,3 +111,26 @@ footer {
     display: inline;
     padding: 0rem 0.5rem;
 }
+
+footer
+{
+    background-color: black;
+    color: white;
+    font-size: 1rem;
+}
+
+/* body
+{
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+} */
+
+.pd
+{
+    padding: 1rem;
+}
+
+img {
+    width: 20px;
+    padding: 1rem 0.2rem;
+  }
