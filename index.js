@@ -2,24 +2,25 @@ const initialPrice = document.querySelector('#initial-price');
 const stocksQuantity = document.querySelector('#stocks-quantity');
 const currentPrice = document.querySelector('#current-price');
 const calculateBtn = document.querySelector('#calculate-button');
-const outputMessage1 = document.querySelector('#output-message1');
-const outputMessage2 = document.querySelector('#output-message2');
+const outputMessage = document.querySelector('#output-message');
+
+outputMessage.innerText="₹0";
 
 function ProfitLossCalculator(initial, current, quantity) {
 
     if (initial < current) {
         const profit = (current - initial)*stocksQuantity.value;
         const percentageProfit = (profit / (initial*stocksQuantity.value)) * 100;
-        outputMessage1.innerText = "Your Profit is " + profit + " and Profit percentage is " + percentageProfit;
-        outputMessage2.innerText = "";
-
+        outputMessage.innerText = "Your profit is ₹" + profit + " and profit percentage is " + percentageProfit+"%";
+        document.body.style.backgroundColor = "#AAFF00";
+ 
     } else if (initial > current) {
         const loss = (initial - current)*stocksQuantity.value;
         const percentageLoss = (loss / (initial*stocksQuantity.value)) * 100;
-        outputMessage2.innerText = "Your Loss is " + loss + " and Loss percentage is " + percentageLoss;
-        outputMessage1.innerText = "";
+        outputMessage.innerText = "Your loss is ₹" + loss + " and loss percentage is " + percentageLoss+"%";
+        document.body.style.backgroundColor = "red";
     } else
-        outputMessage1.innerText = "No profit or Loss. Better luck next time";
+        outputMessage.innerText = "No profit or Loss. Better luck next time";
 }
 
 
