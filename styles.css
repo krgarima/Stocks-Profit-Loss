@@ -50,6 +50,7 @@ h2{
     text-align: center;
     margin-top: 1rem;
     border-radius: 0.5rem;
+    width: 15wh;
 }
 
 .result
@@ -64,11 +65,12 @@ h2{
     font-style: normal;
 }
 
-.btn2
+.inp
 {
     background-color: rgb(247, 246, 245);
     font-size: 1.5rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 footer {
